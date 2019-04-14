@@ -1,21 +1,23 @@
 USE hospital;
 
 # 1
-select max(medicine.price)
-from medicine
-where medicine.id in (select prescription.medicine_id
-                      from prescription
-                      where prescription.visit_id in (select visit.id
-                                                      from visit
-                                                      where doctor_id = 1
-                                                        and patient_id = 2));
-# 2
-select profession
-from doctor
-group by profession
-order by count(profession) desc
-limit 1;
+SELECT MAX(medicine.price)
+FROM medicine
+WHERE medicine.id IN (SELECT prescription.medicine_id
+                      FROM prescription
+                      WHERE prescription.visit_id IN (SELECT visit.id
+                                                      FROM visit
+                                                      WHERE doctor_id = 1
+                                                        AND patient_id = 2));
 
+
+# 2
+SELECT doctor.profession
+FROM doctor
+         LEFT JOIN visit ON doctor.id = visit.doctor_id
+GROUP BY doctor.profession
+ORDER BY COUNT(*) DESC
+LIMIT 1;
 
 
 # 3
