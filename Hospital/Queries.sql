@@ -9,7 +9,13 @@ where medicine.id in (select prescription.medicine_id
                                                       from visit
                                                       where doctor_id = 1
                                                         and patient_id = 2));
-#2
+# 2
+select profession
+from doctor
+group by profession
+order by count(profession) desc
+limit 1;
+
 
 
 # 3
