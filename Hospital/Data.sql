@@ -71,3 +71,9 @@ VALUES (1, 1, 1, 1, '1390/11/11');
 
 INSERT INTO prescription
 VALUES (1, 1);
+
+insert into visit
+VALUES (2, 1, 2, 1, '1390/11/12');
+insert  into prescription
+values (2,1);
+
