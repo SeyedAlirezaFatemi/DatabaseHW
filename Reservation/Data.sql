@@ -56,3 +56,9 @@ VALUES (8, '1397/06/06', 'Rejected', '1397/07/07', 1, DEFAULT, 1, 3);
 
 INSERT INTO reserve
 VALUES (9, '1397/06/06', 'Rejected', '1397/07/07', 1, DEFAULT, 1, 3);
+
+INSERT INTO reserve
+VALUES (10, '1397/06/06', 'Finished', '1397/07/07', 1, DEFAULT, 1, 3);
+
+INSERT INTO reserve
+VALUES (11, '1397/06/06', 'Finished', '1397/06/10', 1, DEFAULT, 1, 3);
