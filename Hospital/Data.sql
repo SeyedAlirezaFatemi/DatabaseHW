@@ -28,16 +28,16 @@ INSERT INTO medicine
 VALUES (5, 'Acid', 'Aray', 400);
 
 INSERT INTO nurse
-VALUES (1, 'Sara', 'Abidi', 14);
+VALUES (1, 'Sara', 'Abidi', 2);
 
 INSERT INTO nurse
-VALUES (2, 'Ali', 'Mohammadi', 12);
+VALUES (2, 'Ali', 'Mohammadi', 2);
 
 INSERT INTO nurse
-VALUES (3, 'Ahmad', 'Khani', 5);
+VALUES (3, 'Ahmad', 'Khani', 1);
 
 INSERT INTO nurse
-VALUES (4, 'Hamed', 'Kiani', 8);
+VALUES (4, 'Hamed', 'Kiani', 1);
 
 INSERT INTO patient
 VALUES ('Ali', 'Abidi', 1);
