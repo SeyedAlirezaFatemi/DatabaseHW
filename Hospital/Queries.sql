@@ -15,6 +15,7 @@ WHERE medicine.id IN (SELECT prescription.medicine_id
 SELECT doctor.profession
 FROM doctor
          LEFT JOIN visit ON doctor.id = visit.doctor_id
+WHERE visit.room_number IS NOT NULL
 GROUP BY doctor.profession
 ORDER BY COUNT(*) DESC
 LIMIT 1;
