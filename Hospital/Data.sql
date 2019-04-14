@@ -24,6 +24,9 @@ VALUES (3, 'Actifen', 'Abidi', 300);
 INSERT INTO medicine
 VALUES (4, 'Butibufen', 'Aray', 400);
 
+INSERT INTO medicine
+VALUES (5, 'Acid', 'Aray', 400);
+
 INSERT INTO nurse
 VALUES (1, 'Sara', 'Abidi', 14);
 
