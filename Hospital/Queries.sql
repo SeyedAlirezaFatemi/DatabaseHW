@@ -51,4 +51,16 @@ WHERE EXISTS(SELECT *
                                         AND nurse.id IN (SELECT supervision.nurse_id
                                                          FROM supervision
                                                          WHERE supervision.date = relative.date)))
+# 5 - second way
+select *
+from patient
+where patient.id in (
+  select relative.patient_id
+  from relative
+         left join nurse on relative.lname = nurse.lname
+         left join visit on visit.patient_id = relative.patient_id
+         left join supervision on nurse.id = supervision.nurse_id
+  where nurse.shift = 2
+    and supervision.date = relative.date
+    and supervision.room_number = visit.room_number);
 
