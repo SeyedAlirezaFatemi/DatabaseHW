@@ -51,7 +51,7 @@ WHERE EXISTS(SELECT *
                                         AND nurse.id IN (SELECT supervision.nurse_id
                                                          FROM supervision
                                                          WHERE supervision.date = relative.date)))
-# 5 - second way
+# 5 - Second Method
 select *
 from patient
 where patient.id in (
